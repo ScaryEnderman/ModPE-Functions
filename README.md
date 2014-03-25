@@ -5,31 +5,53 @@ ModPE-Functions
 
 ```JavaScript
 
-public void addItemInventory(int id, int amount, int damage){}
+public void addItemInventory(int id, int amount, int damage) {}
 > addItemInventory(264, 16, 0); //gives 10 diamonds to player
 
 
-bl_setMobSkin(par1int, par2String);
+public void bl_setMobSkin(int entity, String tex) {}
+> bl_setMobSkin(victim, "mob/zombie.png"); //sets an entities skin to an image included in MCPE
 
-bl_spawnMob(par1double, par2double, par3double, par4int, par5String);
 
-clientMessage(par1String);
+public int bl_spawnMob(double x, double y, double z, int typeId, String tex) {}
+> bl_spawnMob(128, 70, 128, 12, "mob/pig.png"); //spawns a pig with pig texture at the coordinates [128,70,128]
 
-explode(par1double, par2double, par3double, par4double);
 
-getCarriedItem();
+public void clientMessage(String text) {}
+> clientMessage("Hello Player"); //Sends a chat Message with the content of Hello Player
 
-getLevel();
 
-getPitch(par1Object);
+public static void explode(double x, double y, double z, double radius) {}
+> explode(100, 150, 30, 6); //explodes at the location [100,150,30] within a radius of 6 blocks
 
-getPlayerEnt();
 
-getPlayerX();
+public int getCarriedItem() {}
+> getCarriedItem(); //returns the id of the player's carried item
 
-getPlayerY();
 
-getPlayerZ();
+public NativePointer getLevel() {}
+> getLevel(); //returns the level
+
+
+public double getPitch(Object entObj) {}
+> getPitch(getPlayerEnt()); //returns the pitch of an entity (Player's pitch in example)
+
+
+public int getPlayerEnt() {}
+> getPlayerEnt(); //get's the player's entity
+
+
+public double getPlayerX() {}
+> getPlayerX(); //returns the x coordinate of the player
+
+
+public double getPlayerY() {}
+> getPlayerY(); //returns the y coordinate of the player
+
+
+public double getPlayerZ() {}
+> getPlayerZ(); //returns the z coordinate of the player
+
 
 getTile(par1int, par2int, par3int);
 
@@ -64,8 +86,10 @@ spawnCow(par1double, par2double, par3double, par4String);
 spawnPigZombie(par1double, par2double, par3double, par4int, par5String);
 ```
 
+## Comming soon
 
-
+```JavaScript
+/*
 ModPE.getItemName(par1int, par2int, par3boolean);
 ModPE.joinServer(par1String, par2int);
 ModPE.langEdit(par1String, par2String);
@@ -168,4 +192,5 @@ Block.setExplosionResistance(par1int, par2double);
 Block.setLightLevel(par1int, par2int);
 Block.setRenderLayer(par1int, par2int);
 Block.setShape(par1int, par2double, par3double, par4double, par5double, par6double, par7double);
-
+*/
+```
