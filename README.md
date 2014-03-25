@@ -1,10 +1,12 @@
 ModPE-Functions
 ===============
 
-# Functions
+## Functions
 
-`
+```
 addItemInventory(par1int, par2int, par3int);
+>	public void addItemInventory(int id, int amount, int damage) {
+
 
 bl_setMobSkin(par1int, par2String);
 
@@ -59,7 +61,7 @@ spawnChicken(par1double, par2double, par3double, par4String);
 spawnCow(par1double, par2double, par3double, par4String);
 
 spawnPigZombie(par1double, par2double, par3double, par4int, par5String);
-`
+```
 
 
 
