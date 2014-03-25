@@ -85,23 +85,21 @@ public static void setPositionRelative(int ent, double x, double y, double z) {}
 > setPositionRelative(getPlayerEnt(), 10, 5, 20); //would teleport player to the coordinates [10,5,20]
 
 
-setRot(par1int, par2double, par3double);
+public void setRot(int ent, double yaw, double pitch) {}
+> setRot(victim, 1, 2); //would set victims (attackHook) yaw to 1 and pitch to 2
 
 
-
-setTile(par1int, par2int, par3int, par4int, par5int);
-
-
-
-setVelX(par1int, par2double);
+public static void setTile(int x, int y, int z, int id, int damage) {}
+> setTile(70, 80, 90, 17, 2); //sets a block to a position: Birch Wood at [70,80,90]
 
 
+public static void setVelX(int ent, double amount) {}
+> setVelX(getPlayerEnt(), 4); //sets entitys (in example: players) X Velocity to 4
 
-setVelY(par1int, par2double);
 
+public static void setVelX(int ent, double amount) {}
+> setVelX(getPlayerEnt(), 4); //sets entitys (in example: players) X Velocity to 4
 
-
-setVelZ(par1int, par2double);
 
 
 
