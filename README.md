@@ -1,36 +1,67 @@
 ModPE-Functions
 ===============
 
-```#Normal Functions```
+# Functions
 
+`
 addItemInventory(par1int, par2int, par3int);
+
 bl_setMobSkin(par1int, par2String);
+
 bl_spawnMob(par1double, par2double, par3double, par4int, par5String);
+
 clientMessage(par1String);
+
 explode(par1double, par2double, par3double, par4double);
+
 getCarriedItem();
+
 getLevel();
+
 getPitch(par1Object);
+
 getPlayerEnt();
+
 getPlayerX();
+
 getPlayerY();
+
 getPlayerZ();
+
 getTile(par1int, par2int, par3int);
+
 getYaw(par1Object);
+
 preventDefault();
+
 print(par1String);
+
 rideAnimal(par1int, par2int);
+
 setNightMode(par1boolean);
+
 setPosition(par1int, par2double, par3double, par4double);
+
 setPositionRelative(par1int, par2double, par3double, par4double);
+
 setRot(par1int, par2double, par3double);
+
 setTile(par1int, par2int, par3int, par4int, par5int);
+
 setVelX(par1int, par2double);
+
 setVelY(par1int, par2double);
+
 setVelZ(par1int, par2double);
+
 spawnChicken(par1double, par2double, par3double, par4String);
+
 spawnCow(par1double, par2double, par3double, par4String);
+
 spawnPigZombie(par1double, par2double, par3double, par4int, par5String);
+`
+
+
 
 ModPE.getItemName(par1int, par2int, par3boolean);
 ModPE.joinServer(par1String, par2int);
