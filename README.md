@@ -97,21 +97,25 @@ public static void setVelX(int ent, double amount) {}
 > setVelX(getPlayerEnt(), 4); //sets entitys (in example: players) X Velocity to 4
 
 
-public static void setVelX(int ent, double amount) {}
-> setVelX(getPlayerEnt(), 4); //sets entitys (in example: players) X Velocity to 4
+public static void setVelY(int ent, double amount) {}
+> setVelY(getPlayerEnt(), 2); //sets entitys (in example: players) Y Velocity to 2
 
 
+public static void setVelZ(int ent, double amount) {}
+> setVelZ(getPlayerEnt(), 7); //sets entitys (in example: players) Z Velocity to 7
 
 
-spawnChicken(par1double, par2double, par3double, par4String);
+public int spawnChicken(double x, double y, double z, ~~String tex~~) {}
+> spawnChicken(getPlayerX(), getPlayerY(), getPlayerZ(), ~~String tex~~); //Textures unsupported; spawns chicken
 
 
+public int spawnCow(double x, double y, double z, ~~String tex~~) {}
+> spawnCow(7, 8, 9, ~~String tex~~); //Textures unsupported; spawns cow at coords of [7,8,9]
 
-spawnCow(par1double, par2double, par3double, par4String);
 
+public int spawnPigZombie(double x, double y, double z, int item, ~~String tex~~) {}
+> spawnPigZombie(20, 200, 200, 283, ~~String tex~~); //Textures unsupported; spawns pigmen at coords of [20,200,200] with gold sword
 
-
-spawnPigZombie(par1double, par2double, par3double, par4int, par5String);
 ```
 
 ## Comming soon
