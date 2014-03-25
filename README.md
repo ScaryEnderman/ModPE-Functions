@@ -26,7 +26,7 @@ public static void explode(double x, double y, double z, double radius) {}
 
 
 public int getCarriedItem() {}
-> getCarriedItem(); //returns the id of the player's carried item
+> getCarriedItem(); //returns the id of the players carried item
 
 
 public NativePointer getLevel() {}
@@ -34,7 +34,7 @@ public NativePointer getLevel() {}
 
 
 public double getPitch(Object entObj) {}
-> getPitch(getPlayerEnt()); //returns the pitch of an entity (Player's pitch in example)
+> getPitch(getPlayerEnt()); //returns the pitch of an entity (Players pitch in example)
 
 
 public int getPlayerEnt() {}
@@ -53,35 +53,65 @@ public double getPlayerZ() {}
 > getPlayerZ(); //returns the z coordinate of the player
 
 
-getTile(par1int, par2int, par3int);
+public int getTile(int x, int y, int z) {}
+> getTile(1,2,3); { //returns the blocks id which is located at the coordinates [1,2,3]
 
-getYaw(par1Object);
 
-preventDefault();
+public double getYaw(Object entObj) {}
+> getYaw(getPlayerEnt()); //returns the yaw of an entity (Players yaw in example)
 
-print(par1String);
 
-rideAnimal(par1int, par2int);
+public void preventDefault() {}
+> preventDefault(); //prevents MCPE to execute the action it normally should
 
-setNightMode(par1boolean);
 
-setPosition(par1int, par2double, par3double, par4double);
+public void print(String str) {}
+> print("I'm an android Toast"); //A message as clientMessage but is displayed as an Android Toast
 
-setPositionRelative(par1int, par2double, par3double, par4double);
+
+public void rideAnimal(int rider, int mount) {}
+> rideAnimal(victim, attacker); //victim-attacker is only an example if used in attackHook, victim would ride attacker
+
+
+public void setNightMode(boolean isNight) {}
+> setNightMode(true); //Sets NightMode to true or false
+
+
+public static void setPosition(int ent, double x, double y, double z) {}
+> setPosition(getPlayerEnt(), 50, 100, 200); //would teleport player to the coordinates [50,100,200]
+
+
+public static void setPositionRelative(int ent, double x, double y, double z) {}
+> setPositionRelative(getPlayerEnt(), 10, 5, 20); //would teleport player to the coordinates [10,5,20]
+
 
 setRot(par1int, par2double, par3double);
 
+
+
 setTile(par1int, par2int, par3int, par4int, par5int);
+
+
 
 setVelX(par1int, par2double);
 
+
+
 setVelY(par1int, par2double);
+
+
 
 setVelZ(par1int, par2double);
 
+
+
 spawnChicken(par1double, par2double, par3double, par4String);
 
+
+
 spawnCow(par1double, par2double, par3double, par4String);
+
+
 
 spawnPigZombie(par1double, par2double, par3double, par4int, par5String);
 ```
