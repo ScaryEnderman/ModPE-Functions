@@ -1,7 +1,7 @@
 ModPE-Functions
 ===============
 
-```Normal Functions```
+```#Normal Functions```
 
 addItemInventory(par1int, par2int, par3int);
 bl_setMobSkin(par1int, par2String);
