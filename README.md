@@ -3,9 +3,10 @@ ModPE-Functions
 
 ## Functions
 
-```
-addItemInventory(par1int, par2int, par3int);
->	public void addItemInventory(int id, int amount, int damage) {
+```JavaScript
+
+public void addItemInventory(int id, int amount, int damage){}
+> addItemInventory(264, 16, 0); //gives 10 diamonds to player
 
 
 bl_setMobSkin(par1int, par2String);
